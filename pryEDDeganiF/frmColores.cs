@@ -22,5 +22,15 @@ namespace pryEDDeganiF
             frmColores x = new frmColores();
             x.ShowDialog();
         }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombreArchivo = "Colores.csv";
+            x.Grabar(txtColor.Text);
+
+            MessageBox.Show("Color grabado correctamente");
+
+        }
     }
 }
