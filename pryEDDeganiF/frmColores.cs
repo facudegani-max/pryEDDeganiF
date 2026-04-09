@@ -32,5 +32,10 @@ namespace pryEDDeganiF
             MessageBox.Show("Color grabado correctamente");
 
         }
+
+        private void txtColor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

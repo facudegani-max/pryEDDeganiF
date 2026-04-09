@@ -33,5 +33,22 @@ namespace pryEDDeganiF
         {
             this.Close();
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void coloresToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmColores x = new frmColores();
+            x.ShowDialog();
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmClientes x = new frmClientes();
+            x.ShowDialog();
+        }
     }
 }

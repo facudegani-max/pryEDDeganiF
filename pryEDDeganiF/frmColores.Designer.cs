@@ -32,7 +32,7 @@
             this.btnListar = new System.Windows.Forms.Button();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.lstColores = new System.Windows.Forms.ListBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtColor = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -74,20 +74,21 @@
             this.lstColores.Size = new System.Drawing.Size(326, 264);
             this.lstColores.TabIndex = 3;
             // 
-            // txtNombre
+            // txtColor
             // 
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(138, 33);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(172, 29);
-            this.txtNombre.TabIndex = 4;
+            this.txtColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtColor.Location = new System.Drawing.Point(138, 33);
+            this.txtColor.Name = "txtColor";
+            this.txtColor.Size = new System.Drawing.Size(172, 29);
+            this.txtColor.TabIndex = 4;
+            this.txtColor.TextChanged += new System.EventHandler(this.txtColor_TextChanged);
             // 
             // frmColores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 411);
-            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtColor);
             this.Controls.Add(this.lstColores);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.btnListar);
@@ -107,6 +108,6 @@
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.ListBox lstColores;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtColor;
     }
 }

@@ -38,6 +38,7 @@
             this.Name = "frmDatosDesarrollador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos Desarrolador";
+            this.Load += new System.EventHandler(this.frmDatosDesarrollador_Load);
             this.ResumeLayout(false);
 
         }

@@ -42,6 +42,7 @@
             this.diasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.carreraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estructurasLinealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pilaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,6 +59,7 @@
             this.operacionesBaseDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
             this.consultasVariasConOperacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.coloresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,7 +115,9 @@
             this.mesesToolStripMenuItem1,
             this.diasToolStripMenuItem,
             this.toolStripMenuItem3,
-            this.clientesToolStripMenuItem});
+            this.clientesToolStripMenuItem,
+            this.carreraToolStripMenuItem,
+            this.coloresToolStripMenuItem1});
             this.pOOToolStripMenuItem.Name = "pOOToolStripMenuItem";
             this.pOOToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.pOOToolStripMenuItem.Text = "POO";
@@ -157,6 +161,13 @@
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clientesToolStripMenuItem.Text = "Clientes...";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            // 
+            // carreraToolStripMenuItem
+            // 
+            this.carreraToolStripMenuItem.Name = "carreraToolStripMenuItem";
+            this.carreraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.carreraToolStripMenuItem.Text = "Carrera...";
             // 
             // estructurasLinealesToolStripMenuItem
             // 
@@ -267,6 +278,13 @@
             this.consultasVariasConOperacionesToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
             this.consultasVariasConOperacionesToolStripMenuItem.Text = "Consultas Varias con Operaciones...";
             // 
+            // coloresToolStripMenuItem1
+            // 
+            this.coloresToolStripMenuItem1.Name = "coloresToolStripMenuItem1";
+            this.coloresToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.coloresToolStripMenuItem1.Text = "Colores...";
+            this.coloresToolStripMenuItem1.Click += new System.EventHandler(this.coloresToolStripMenuItem1_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,6 +298,7 @@
             this.Name = "FrmPrincipal";
             this.Text = "Estructura de Datos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
             this.ResumeLayout(false);
@@ -318,6 +337,8 @@
         private System.Windows.Forms.ToolStripMenuItem operacionesBaseDatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem consultasVariasConOperacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem carreraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem coloresToolStripMenuItem1;
     }
 }
 
