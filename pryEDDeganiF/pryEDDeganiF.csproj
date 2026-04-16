@@ -59,6 +59,14 @@
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="clsArchivoTexto.cs" />
+    <Compile Include="ClsCola.cs" />
+    <Compile Include="ClsNodo.cs" />
+    <Compile Include="Cola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cola.Designer.cs">
+      <DependentUpon>Cola.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cola.resx">
+      <DependentUpon>Cola.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
