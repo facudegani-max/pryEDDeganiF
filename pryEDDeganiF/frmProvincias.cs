@@ -20,7 +20,6 @@ namespace pryEDDeganiF
         private void frmProvincias_Load(object sender, EventArgs e)
         {
             frmProvincias x = new frmProvincias();
-            x.ShowDialog();
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
@@ -30,6 +29,14 @@ namespace pryEDDeganiF
             x.Grabar(txtProvincia.Text);
 
             MessageBox.Show("Provincia grabada correctamente");
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombreArchivo = "Provincia.csv";
+            lstProvincias.Items.Clear();
+            x.Recorrer(lstProvincias);
         }
     }
 }

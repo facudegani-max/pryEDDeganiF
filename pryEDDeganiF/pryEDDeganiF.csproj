@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alumnos.cs">
+    <Compile Include="frmAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Alumnos.Designer.cs">
-      <DependentUpon>Alumnos.cs</DependentUpon>
+    <Compile Include="frmAlumnos.Designer.cs">
+      <DependentUpon>frmAlumnos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Clientes.cs">
+    <Compile Include="frmClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Clientes.Designer.cs">
-      <DependentUpon>Clientes.cs</DependentUpon>
+    <Compile Include="frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="clsArchivoTexto.cs" />
     <Compile Include="ClsCola.cs" />
@@ -111,11 +111,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Alumnos.resx">
-      <DependentUpon>Alumnos.cs</DependentUpon>
+    <EmbeddedResource Include="frmAlumnos.resx">
+      <DependentUpon>frmAlumnos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Clientes.resx">
-      <DependentUpon>Clientes.cs</DependentUpon>
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cola.resx">
       <DependentUpon>Cola.cs</DependentUpon>
@@ -169,6 +169,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagen de WhatsApp 2024-09-20 a las 01.21.11_0e13d2e2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen de WhatsApp 2024-04-23 a las 22.51.57_b4258cd1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

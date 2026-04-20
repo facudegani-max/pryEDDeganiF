@@ -122,10 +122,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.ErrorImage = global::pryEDDeganiF.Properties.Resources.Imagen_de_WhatsApp_2024_09_20_a_las_01_21_11_0e13d2e2;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 13);
+            this.pictureBox1.ErrorImage = global::pryEDDeganiF.Properties.Resources.Imagen_de_WhatsApp_2024_04_23_a_las_22_51_57_b4258cd1;
+            this.pictureBox1.Image = global::pryEDDeganiF.Properties.Resources.Imagen_de_WhatsApp_2024_04_23_a_las_22_51_57_b4258cd1;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 19);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(148, 128);
+            this.pictureBox1.Size = new System.Drawing.Size(150, 115);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
@@ -134,7 +135,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 153);
+            this.ClientSize = new System.Drawing.Size(428, 149);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);

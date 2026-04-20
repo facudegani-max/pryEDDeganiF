@@ -20,7 +20,6 @@ namespace pryEDDeganiF
         private void frmDias_Load(object sender, EventArgs e)
         {
             frmDias x = new frmDias();
-            x.ShowDialog();
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
@@ -30,6 +29,14 @@ namespace pryEDDeganiF
             x.Grabar(txtDia.Text);
 
             MessageBox.Show("Dia grabado correctamente");
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombreArchivo = "Dias.csv";
+            lstDias.Items.Clear();
+            x.Recorrer(lstDias);
         }
     }
 }

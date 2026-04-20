@@ -1,6 +1,6 @@
 ﻿namespace pryEDDeganiF
 {
-    partial class Alumnos
+    partial class frmAlumnos
     {
         /// <summary>
         /// Required designer variable.

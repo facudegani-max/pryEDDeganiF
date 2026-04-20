@@ -20,7 +20,6 @@ namespace pryEDDeganiF
         private void frmMeses_Load(object sender, EventArgs e)
         {
             frmMeses x = new frmMeses();
-            x.ShowDialog();
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
@@ -30,6 +29,14 @@ namespace pryEDDeganiF
             x.Grabar(txtMes.Text);
 
             MessageBox.Show("Mes grabado correctamente");
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombreArchivo = "Meses.csv";
+            lstMeses.Items.Clear();
+            x.Recorrer(lstMeses);
         }
     }
 }

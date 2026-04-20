@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace pryEDDeganiF
 {
@@ -20,7 +21,7 @@ namespace pryEDDeganiF
         private void frmColores_Load(object sender, EventArgs e)
         {
             frmColores x = new frmColores();
-            x.ShowDialog();
+            
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
@@ -36,6 +37,15 @@ namespace pryEDDeganiF
         private void txtColor_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombreArchivo = "Colores.csv";
+
+            lstColores.Items.Clear();
+            x.Recorrer(lstColores);
         }
     }
 }

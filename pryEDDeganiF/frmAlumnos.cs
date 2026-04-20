@@ -11,9 +11,9 @@ using System.IO;
 
 namespace pryEDDeganiF
 {
-    public partial class Alumnos : Form
+    public partial class frmAlumnos : Form
     {
-        public Alumnos()
+        public frmAlumnos()
         {
             InitializeComponent();
         }

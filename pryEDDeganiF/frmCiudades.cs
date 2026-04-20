@@ -20,7 +20,6 @@ namespace pryEDDeganiF
         private void frmCiudades_Load(object sender, EventArgs e)
         {
             frmCiudades x = new frmCiudades();
-            x.ShowDialog();
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
@@ -30,6 +29,15 @@ namespace pryEDDeganiF
             x.Grabar(txtCiudad.Text);
 
             MessageBox.Show("Ciudad grabada correctamente");
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombreArchivo = "Ciudad.csv";
+
+            lstCiudades.Items.Clear();
+            x.Recorrer(lstCiudades);
         }
     }
 }
