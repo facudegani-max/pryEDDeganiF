@@ -67,6 +67,18 @@
     <Compile Include="Cola.Designer.cs">
       <DependentUpon>Cola.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCiudades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCiudades.Designer.cs">
+      <DependentUpon>frmCiudades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDias.Designer.cs">
+      <DependentUpon>frmDias.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,18 @@
     <Compile Include="frmDatosDesarrollador.Designer.cs">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMeses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeses.Designer.cs">
+      <DependentUpon>frmMeses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProvincias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProvincias.Designer.cs">
+      <DependentUpon>frmProvincias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Alumnos.resx">
@@ -96,6 +120,12 @@
     <EmbeddedResource Include="Cola.resx">
       <DependentUpon>Cola.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCiudades.resx">
+      <DependentUpon>frmCiudades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDias.resx">
+      <DependentUpon>frmDias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +135,12 @@
     <EmbeddedResource Include="frmDatosDesarrollador.resx">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMeses.resx">
+      <DependentUpon>frmMeses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProvincias.resx">
+      <DependentUpon>frmProvincias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -113,6 +149,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -126,6 +163,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-04-19 at 11.16.17 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen de WhatsApp 2024-09-20 a las 01.21.11_0e13d2e2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

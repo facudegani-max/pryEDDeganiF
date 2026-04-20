@@ -44,7 +44,7 @@
             // 
             // btnGrabar
             // 
-            this.btnGrabar.Location = new System.Drawing.Point(172, 178);
+            this.btnGrabar.Location = new System.Drawing.Point(172, 173);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(134, 37);
             this.btnGrabar.TabIndex = 0;
@@ -112,7 +112,7 @@
             this.Carrera});
             this.dgvAlumnos.Location = new System.Drawing.Point(12, 225);
             this.dgvAlumnos.Name = "dgvAlumnos";
-            this.dgvAlumnos.Size = new System.Drawing.Size(387, 223);
+            this.dgvAlumnos.Size = new System.Drawing.Size(387, 144);
             this.dgvAlumnos.TabIndex = 7;
             // 
             // Codigo
@@ -134,7 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 460);
+            this.ClientSize = new System.Drawing.Size(411, 381);
             this.Controls.Add(this.dgvAlumnos);
             this.Controls.Add(this.txtCarrera);
             this.Controls.Add(this.txtNombre);
@@ -144,6 +144,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGrabar);
             this.Name = "Alumnos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumnos";
             this.Load += new System.EventHandler(this.Alumnos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).EndInit();

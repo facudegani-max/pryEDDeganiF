@@ -19,7 +19,8 @@ namespace pryEDDeganiF
 
         private void frmDatosDesarrollador_Load(object sender, EventArgs e)
         {
-
+            frmDatosDesarrollador x = new frmDatosDesarrollador();
+            x.ShowDialog();
         }
     }
 }

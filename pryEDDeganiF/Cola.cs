@@ -16,5 +16,10 @@ namespace pryEDDeganiF
         {
             InitializeComponent();
         }
+
+        private void Cola_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

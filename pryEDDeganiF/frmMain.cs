@@ -50,5 +50,10 @@ namespace pryEDDeganiF
             frmClientes x = new frmClientes();
             x.ShowDialog();
         }
+
+        private void carreraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

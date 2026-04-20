@@ -28,7 +28,7 @@ namespace pryEDDeganiF
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             clsArchivoTexto objCliente = new clsArchivoTexto();
-            objCliente.NombreArchivo = "Clientes.csv";
+            objCliente.NombreArchivo = "Alumnos.csv";
             objCliente.Grabar(txtCodigo.Text, txtNombre.Text, txtCarrera.Text);
             objCliente.Recorrer(dgvAlumnos);
 

@@ -30,8 +30,6 @@
         {
             this.btnGrabar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.ComboBox();
             this.txtNombre = new System.Windows.Forms.ComboBox();
             this.txtDeuda = new System.Windows.Forms.ComboBox();
@@ -39,14 +37,17 @@
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Deuda = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGrabar
             // 
-            this.btnGrabar.Location = new System.Drawing.Point(293, 166);
+            this.btnGrabar.Location = new System.Drawing.Point(185, 156);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(105, 35);
+            this.btnGrabar.Size = new System.Drawing.Size(135, 49);
             this.btnGrabar.TabIndex = 0;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = true;
@@ -57,32 +58,13 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(115, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Codigo";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(115, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Nombre";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(116, 125);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Deuda";
             // 
             // txtCodigo
             // 
             this.txtCodigo.FormattingEnabled = true;
-            this.txtCodigo.Location = new System.Drawing.Point(243, 41);
+            this.txtCodigo.Location = new System.Drawing.Point(173, 34);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(155, 21);
             this.txtCodigo.TabIndex = 4;
@@ -90,7 +72,7 @@
             // txtNombre
             // 
             this.txtNombre.FormattingEnabled = true;
-            this.txtNombre.Location = new System.Drawing.Point(243, 82);
+            this.txtNombre.Location = new System.Drawing.Point(173, 77);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(155, 21);
             this.txtNombre.TabIndex = 5;
@@ -98,7 +80,7 @@
             // txtDeuda
             // 
             this.txtDeuda.FormattingEnabled = true;
-            this.txtDeuda.Location = new System.Drawing.Point(243, 122);
+            this.txtDeuda.Location = new System.Drawing.Point(173, 117);
             this.txtDeuda.Name = "txtDeuda";
             this.txtDeuda.Size = new System.Drawing.Size(155, 21);
             this.txtDeuda.TabIndex = 6;
@@ -110,7 +92,7 @@
             this.Codigo,
             this.Nombre,
             this.Deuda});
-            this.dgvClientes.Location = new System.Drawing.Point(57, 218);
+            this.dgvClientes.Location = new System.Drawing.Point(12, 218);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.Size = new System.Drawing.Size(341, 150);
             this.dgvClientes.TabIndex = 7;
@@ -130,17 +112,48 @@
             this.Deuda.HeaderText = "Deuda";
             this.Deuda.Name = "Deuda";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(49, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 25);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Codigo";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(49, 71);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 25);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Nombre";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(49, 113);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 25);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Deuda";
+            // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(601, 380);
+            this.ClientSize = new System.Drawing.Size(366, 380);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.txtDeuda);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtCodigo);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGrabar);
             this.Name = "frmClientes";
@@ -157,8 +170,6 @@
 
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox txtCodigo;
         private System.Windows.Forms.ComboBox txtNombre;
         private System.Windows.Forms.ComboBox txtDeuda;
@@ -166,5 +177,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Deuda;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
