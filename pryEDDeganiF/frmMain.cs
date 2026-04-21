@@ -86,5 +86,11 @@ namespace pryEDDeganiF
             x.ShowDialog();
 
         }
+
+        private void colaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cola x = new Cola();
+            x.ShowDialog();
+        }
     }
 }

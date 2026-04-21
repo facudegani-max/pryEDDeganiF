@@ -45,16 +45,39 @@ namespace pryEDDeganiF
         }
         
 
-        public void Mostrar(DataGridView Grilla)
+        public void Mostrar(DataGridView DgvCola)
         {
             ClsNodo aux = Ini;
+            DgvCola.Rows.Clear();
             while (aux != null)
             {
-                Console.WriteLine("Codigo: " + aux.Cod);
-                Console.WriteLine("Nombre: " + aux.Nom);
-                Console.WriteLine("Trabajo: " + aux.Tra);
-                Console.WriteLine();
+                DgvCola.Rows.Add(aux.Cod, aux.Nom, aux.Tra);
                 aux = aux.Sig;
+
+            }
+        }
+        public void Mostrar(ComboBox cb)
+        {
+            ClsNodo aux = Ini;
+            cb.Items.Clear();
+            while (aux != null)
+            {
+                cb.Items.Add(aux.Cod + " - " + aux.Nom + " - " + aux.Tra);
+                aux = aux.Sig;
+
+            }
+        }
+
+
+        public void Mostrar(ListBox lstCola)
+        {
+            ClsNodo aux = Ini;
+            lstCola.Items.Clear();
+            while (aux != null)
+            {
+                lstCola.Items.Add(aux.Cod + " - " + aux.Nom + " - " + aux.Tra);
+                aux = aux.Sig;
+
             }
         }
     }

@@ -17,8 +17,8 @@ namespace pryEDDeganiF
 
         //Propiedades del Nodo
         public Int32 Cod { get { return cod; } set { cod = value; } }
-        public String Nom { get { return Nom; } set { Nom = value; } }
-        public String Tra { get { return Tra; } set { Tra = value; } }
+        public String Nom { get { return nom; } set { nom = value; } }
+        public String Tra { get { return tra; } set { tra = value; } }
 
         public ClsNodo Sig { get { return sig; } set { sig = value; } }
 
