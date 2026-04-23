@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,44 +8,37 @@ using System.Windows.Forms;
 
 namespace pryEDDeganiF
 {
-    internal class clsCola
+    internal class clsPila
     {
-        private clsNodo ini;
+        private clsNodo pri;
         private clsNodo fin;
 
-        public clsNodo Ini { get { return ini; } set { ini = value; } }
-        public clsNodo Fin { get { return fin; } set { fin = value; } }
-
+        public clsNodo Primero { get { return pri; } set { pri = value; } }
+        public clsNodo Final { get { return fin; } set { fin = value; } }
 
 
         public void Agregar(clsNodo Nuevo)
         {
-            if (Ini == null)
+            if (Primero == null)
             {
-                Ini = Nuevo;
-                Fin = Nuevo;
+                pri = Nuevo;
             }
             else
             {
-                Fin.Sig = Nuevo;
-                Fin = Nuevo;
+                Nuevo.Sig = Primero;
+                Primero = Nuevo;
             }
-        }         
+        }
 
         public void Eliminar()
         {
-            if (Ini == Fin)
+            if (Primero != null)
             {
-                Ini = null;
-                Fin = null;
+                Primero = Primero.Sig;
             }
-            else
-            {
-                Ini = Ini.Sig;
-            } 
         }
-        
 
+        /*
         public void Mostrar(DataGridView DgvCola)
         {
             clsNodo aux = Ini;
@@ -71,7 +65,8 @@ namespace pryEDDeganiF
 
         public void Mostrar(ListBox lstCola)
         {
-            clsNodo aux = Ini;
+        
+        /00clsNodo aux = Ini;
             lstCola.Items.Clear();
             while (aux != null)
             {
@@ -80,5 +75,6 @@ namespace pryEDDeganiF
 
             }
         }
+        */
     }
 }

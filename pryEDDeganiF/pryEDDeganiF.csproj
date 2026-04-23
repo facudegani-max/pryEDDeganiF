@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsPila.cs" />
     <Compile Include="frmAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,8 +60,8 @@
       <DependentUpon>frmClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="clsArchivoTexto.cs" />
-    <Compile Include="ClsCola.cs" />
-    <Compile Include="ClsNodo.cs" />
+    <Compile Include="clsCola.cs" />
+    <Compile Include="clsNodo.cs" />
     <Compile Include="Cola.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +110,12 @@
     <Compile Include="frmProvincias.Designer.cs">
       <DependentUpon>frmProvincias.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pila.Designer.cs">
+      <DependentUpon>Pila.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAlumnos.resx">
@@ -140,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmProvincias.resx">
       <DependentUpon>frmProvincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pila.resx">
+      <DependentUpon>Pila.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -22,10 +22,10 @@ namespace pryEDDeganiF
 
         }
 
-        ClsCola fila = new ClsCola();
+        clsCola fila = new clsCola();
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            ClsNodo n = new ClsNodo();
+            clsNodo n = new clsNodo();
             n.Cod = Convert.ToInt32(txtCodigo_Agregar.Text);
             n.Nom = txtNombre_Agregar.Text;
             n.Tra = txtTramite_Agregar.Text;
