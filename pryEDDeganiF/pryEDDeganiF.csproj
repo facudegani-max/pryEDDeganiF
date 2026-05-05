@@ -110,6 +110,7 @@
     <Compile Include="frmProvincias.Designer.cs">
       <DependentUpon>frmProvincias.cs</DependentUpon>
     </Compile>
+    <Compile Include="clsListaDoble.cs" />
     <Compile Include="Pila.cs">
       <SubType>Form</SubType>
     </Compile>
