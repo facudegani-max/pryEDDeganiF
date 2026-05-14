@@ -112,6 +112,18 @@
       <DependentUpon>frmProvincias.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\clsListaDoble.cs" />
+    <Compile Include="ListaDoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaDoble.Designer.cs">
+      <DependentUpon>ListaDoble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSimple.Designer.cs">
+      <DependentUpon>ListaSimple.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pila.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +161,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmProvincias.resx">
       <DependentUpon>frmProvincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDoble.resx">
+      <DependentUpon>ListaDoble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSimple.resx">
+      <DependentUpon>ListaSimple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pila.resx">
       <DependentUpon>Pila.cs</DependentUpon>

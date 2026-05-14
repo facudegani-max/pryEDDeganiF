@@ -103,5 +103,17 @@ namespace pryEDDeganiF
             Pila x = new Pila();
             x.ShowDialog();
         }
+
+        private void listaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListaSimple x = new ListaSimple();
+            x.ShowDialog();
+        }
+
+        private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListaDoble x = new ListaDoble();
+            x.ShowDialog();
+        }
     }
 }
