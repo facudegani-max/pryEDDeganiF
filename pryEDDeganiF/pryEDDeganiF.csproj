@@ -46,7 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsPila.cs" />
+    <Compile Include="Clases\clsListaSimple.cs" />
+    <Compile Include="Clases\clsPila.cs" />
     <Compile Include="frmAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,9 +60,9 @@
     <Compile Include="frmClientes.Designer.cs">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="clsArchivoTexto.cs" />
-    <Compile Include="clsCola.cs" />
-    <Compile Include="clsNodo.cs" />
+    <Compile Include="Clases\clsArchivoTexto.cs" />
+    <Compile Include="Clases\clsCola.cs" />
+    <Compile Include="Clases\clsNodo.cs" />
     <Compile Include="Cola.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,14 +111,14 @@
     <Compile Include="frmProvincias.Designer.cs">
       <DependentUpon>frmProvincias.cs</DependentUpon>
     </Compile>
-    <Compile Include="clsListaDoble.cs" />
+    <Compile Include="Clases\clsListaDoble.cs" />
     <Compile Include="Pila.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pila.Designer.cs">
       <DependentUpon>Pila.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Clases\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAlumnos.resx">
       <DependentUpon>frmAlumnos.cs</DependentUpon>

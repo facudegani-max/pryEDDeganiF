@@ -92,5 +92,16 @@ namespace pryEDDeganiF
             Cola x = new Cola();
             x.ShowDialog();
         }
+
+        private void Menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pila x = new Pila();
+            x.ShowDialog();
+        }
     }
 }

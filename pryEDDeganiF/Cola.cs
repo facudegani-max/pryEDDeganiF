@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pryEDDeganiF;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,47 +18,59 @@ namespace pryEDDeganiF
             InitializeComponent();
         }
 
+        clsCola fila = new clsCola();
+
         private void Cola_Load(object sender, EventArgs e)
         {
 
         }
 
-        clsCola fila = new clsCola();
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            clsNodo n = new clsNodo();
-            n.Cod = Convert.ToInt32(txtCodigo_Agregar.Text);
-            n.Nom = txtNombre_Agregar.Text;
-            n.Tra = txtTramite_Agregar.Text;
+            if (!String.IsNullOrWhiteSpace(txtCodigo_Agregar.Text) &&
+                !String.IsNullOrWhiteSpace(txtNombre_Agregar.Text) &&
+                !String.IsNullOrWhiteSpace(txtTramite_Agregar.Text))
+            {
+                clsNodo nuevo = new clsNodo();
 
-            fila.Agregar(n);
-            fila.Mostrar(lstCola);
-            fila.Mostrar(dgvCola);
+                nuevo.Nombre = txtNombre_Agregar.Text;
+                nuevo.Codigo = Convert.ToInt32(txtCodigo_Agregar.Text);
+                nuevo.Tramite = txtTramite_Agregar.Text;
 
-            //Cambiar a label
-            //lblCodigo.Text = txtCodigo_Agregar.Text;
-            //lblNombre.Text = txtNombre_Agregar.Text;
-            //lblTramite.Text = txtTramite_Agregar.Text;
+                fila.Agregar(nuevo);
+                fila.Recorrer(dgvCola);
+                fila.Recorrer(lstCola);
 
-            txtCodigo_Agregar.Text = "";
-            txtNombre_Agregar.Text = "";
-            txtTramite_Agregar.Text = "";
+                txtCodigo_Agregar.Clear();
+                txtNombre_Agregar.Clear();
+                txtTramite_Agregar.Clear();
+                txtCodigo_Agregar.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Debe completar todos los campos");
+                txtCodigo_Agregar.Focus();
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (fila.Ini != null)
+            if (fila.Primero != null)
             {
+                MessageBox.Show("Se ha atendido a: " + fila.Primero.Nombre);
+                lblEliminarCodigo.Text = fila.Primero.Codigo.ToString();
+                lblEliminarNombre.Text = fila.Primero.Nombre;
+                lblEliminarTramite.Text = fila.Primero.Tramite;
                 fila.Eliminar();
-                fila.Mostrar(lstCola);
-                fila.Mostrar(dgvCola);
-                //fila.Mostrar();
+                fila.Recorrer(dgvCola);
+                fila.Recorrer(lstCola);
+                fila.Recorrer();
             }
-            else 
-            { 
-                txtCodigo_Eliminar.Text = "";
-                txtNombre_Eliminar.Text = "";
-                txtTramite_Eliminar.Text = "";
+            else
+            {
+                lblEliminarCodigo.Text = "";
+                lblEliminarNombre.Text = "";
+                lblEliminarTramite.Text = "";
             }
         }
     }

@@ -37,9 +37,6 @@
             this.txtCodigo_Agregar = new System.Windows.Forms.TextBox();
             this.txtTramite_Agregar = new System.Windows.Forms.TextBox();
             this.txtNombre_Agregar = new System.Windows.Forms.TextBox();
-            this.txtTramite_Eliminar = new System.Windows.Forms.TextBox();
-            this.txtNombre_Eliminar = new System.Windows.Forms.TextBox();
-            this.txtCodigo_Eliminar = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.lstCola = new System.Windows.Forms.ListBox();
@@ -51,6 +48,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblEliminarCodigo = new System.Windows.Forms.Label();
+            this.lblEliminarNombre = new System.Windows.Forms.Label();
+            this.lblEliminarTramite = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).BeginInit();
             this.groupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -133,31 +133,10 @@
             this.txtNombre_Agregar.Size = new System.Drawing.Size(75, 20);
             this.txtNombre_Agregar.TabIndex = 8;
             // 
-            // txtTramite_Eliminar
-            // 
-            this.txtTramite_Eliminar.Location = new System.Drawing.Point(81, 79);
-            this.txtTramite_Eliminar.Name = "txtTramite_Eliminar";
-            this.txtTramite_Eliminar.Size = new System.Drawing.Size(75, 20);
-            this.txtTramite_Eliminar.TabIndex = 9;
-            // 
-            // txtNombre_Eliminar
-            // 
-            this.txtNombre_Eliminar.Location = new System.Drawing.Point(81, 46);
-            this.txtNombre_Eliminar.Name = "txtNombre_Eliminar";
-            this.txtNombre_Eliminar.Size = new System.Drawing.Size(75, 20);
-            this.txtNombre_Eliminar.TabIndex = 10;
-            // 
-            // txtCodigo_Eliminar
-            // 
-            this.txtCodigo_Eliminar.Location = new System.Drawing.Point(81, 13);
-            this.txtCodigo_Eliminar.Name = "txtCodigo_Eliminar";
-            this.txtCodigo_Eliminar.Size = new System.Drawing.Size(75, 20);
-            this.txtCodigo_Eliminar.TabIndex = 11;
-            // 
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.Aquamarine;
-            this.btnAgregar.Location = new System.Drawing.Point(257, 117);
+            this.btnAgregar.Location = new System.Drawing.Point(264, 117);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(140, 43);
             this.btnAgregar.TabIndex = 12;
@@ -168,7 +147,7 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Red;
-            this.btnEliminar.Location = new System.Drawing.Point(430, 117);
+            this.btnEliminar.Location = new System.Drawing.Point(441, 117);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(136, 43);
             this.btnEliminar.TabIndex = 13;
@@ -213,12 +192,12 @@
             // 
             // groupBox
             // 
-            this.groupBox.Controls.Add(this.txtNombre_Eliminar);
+            this.groupBox.Controls.Add(this.lblEliminarTramite);
+            this.groupBox.Controls.Add(this.lblEliminarNombre);
+            this.groupBox.Controls.Add(this.lblEliminarCodigo);
             this.groupBox.Controls.Add(this.label4);
             this.groupBox.Controls.Add(this.label5);
             this.groupBox.Controls.Add(this.label6);
-            this.groupBox.Controls.Add(this.txtTramite_Eliminar);
-            this.groupBox.Controls.Add(this.txtCodigo_Eliminar);
             this.groupBox.Location = new System.Drawing.Point(410, 6);
             this.groupBox.Name = "groupBox";
             this.groupBox.Size = new System.Drawing.Size(167, 105);
@@ -262,6 +241,31 @@
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
+            // lblEliminarCodigo
+            // 
+            this.lblEliminarCodigo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblEliminarCodigo.Location = new System.Drawing.Point(79, 15);
+            this.lblEliminarCodigo.Name = "lblEliminarCodigo";
+            this.lblEliminarCodigo.Size = new System.Drawing.Size(77, 20);
+            this.lblEliminarCodigo.TabIndex = 6;
+            this.lblEliminarCodigo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblEliminarNombre
+            // 
+            this.lblEliminarNombre.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblEliminarNombre.Location = new System.Drawing.Point(79, 48);
+            this.lblEliminarNombre.Name = "lblEliminarNombre";
+            this.lblEliminarNombre.Size = new System.Drawing.Size(77, 21);
+            this.lblEliminarNombre.TabIndex = 7;
+            // 
+            // lblEliminarTramite
+            // 
+            this.lblEliminarTramite.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblEliminarTramite.Location = new System.Drawing.Point(79, 76);
+            this.lblEliminarTramite.Name = "lblEliminarTramite";
+            this.lblEliminarTramite.Size = new System.Drawing.Size(77, 21);
+            this.lblEliminarTramite.TabIndex = 8;
+            // 
             // Cola
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -299,9 +303,6 @@
         private System.Windows.Forms.TextBox txtCodigo_Agregar;
         private System.Windows.Forms.TextBox txtTramite_Agregar;
         private System.Windows.Forms.TextBox txtNombre_Agregar;
-        private System.Windows.Forms.TextBox txtTramite_Eliminar;
-        private System.Windows.Forms.TextBox txtNombre_Eliminar;
-        private System.Windows.Forms.TextBox txtCodigo_Eliminar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.ListBox lstCola;
@@ -313,5 +314,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblEliminarTramite;
+        private System.Windows.Forms.Label lblEliminarNombre;
+        private System.Windows.Forms.Label lblEliminarCodigo;
     }
 }
