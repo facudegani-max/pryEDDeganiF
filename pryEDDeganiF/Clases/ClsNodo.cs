@@ -23,6 +23,18 @@ namespace pryEDDeganiF
         public clsNodo Siguiente { get => sig; set => sig = value; }
         public clsNodo Anterior { get => ant; set => ant = value; }
 
+        public clsNodo Izquierdo
+            {
+            get { return ant; }
+            set { ant = value; }
+        }
+
+        public clsNodo Derecho
+        {
+            get { return sig; }
+            set { sig = value; }
+        }
+
         /*
         public Int32 Codigo
         {
