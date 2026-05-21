@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arbol.Designer.cs">
+      <DependentUpon>Arbol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\clsArbolBinario.cs" />
     <Compile Include="Clases\clsListaSimple.cs" />
     <Compile Include="Clases\clsPila.cs" />
@@ -133,6 +139,9 @@
     </Compile>
     <Compile Include="Clases\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Arbol.resx">
+      <DependentUpon>Arbol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAlumnos.resx">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
     </EmbeddedResource>
