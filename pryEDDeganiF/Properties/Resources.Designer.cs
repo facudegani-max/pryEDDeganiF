@@ -63,6 +63,16 @@ namespace pryEDDeganiF.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap descarga {
+            get {
+                object obj = ResourceManager.GetObject("descarga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Imagen_de_WhatsApp_2024_04_23_a_las_22_51_57_b4258cd1 {
             get {
                 object obj = ResourceManager.GetObject("Imagen de WhatsApp 2024-04-23 a las 22.51.57_b4258cd1", resourceCulture);

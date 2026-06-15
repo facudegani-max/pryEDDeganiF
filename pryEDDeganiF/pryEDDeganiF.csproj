@@ -46,11 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arbol.cs">
+    <Compile Include="Clases\clsBaseDatos.cs" />
+    <Compile Include="Clases\clsGrafo.cs" />
+    <Compile Include="frmArbol.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Arbol.Designer.cs">
-      <DependentUpon>Arbol.cs</DependentUpon>
+    <Compile Include="frmArbol.Designer.cs">
+      <DependentUpon>frmArbol.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\clsArbolBinario.cs" />
     <Compile Include="Clases\clsListaSimple.cs" />
@@ -70,17 +72,35 @@
     <Compile Include="Clases\clsArchivoTexto.cs" />
     <Compile Include="Clases\clsCola.cs" />
     <Compile Include="Clases\clsNodo.cs" />
-    <Compile Include="Cola.cs">
+    <Compile Include="frmCola.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cola.Designer.cs">
-      <DependentUpon>Cola.cs</DependentUpon>
+    <Compile Include="frmCola.Designer.cs">
+      <DependentUpon>frmCola.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCiudades.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCiudades.Designer.cs">
       <DependentUpon>frmCiudades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultasConOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultasConOperaciones.Designer.cs">
+      <DependentUpon>frmConsultasConOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaSQL.Designer.cs">
+      <DependentUpon>frmConsultaSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaTabla.Designer.cs">
+      <DependentUpon>frmConsultaTabla.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDias.cs">
       <SubType>Form</SubType>
@@ -112,6 +132,12 @@
     <Compile Include="frmMeses.Designer.cs">
       <DependentUpon>frmMeses.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperaciones.Designer.cs">
+      <DependentUpon>frmOperaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProvincias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +145,12 @@
       <DependentUpon>frmProvincias.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\clsListaDoble.cs" />
+    <Compile Include="frmGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrafo.Designer.cs">
+      <DependentUpon>frmGrafo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListaDoble.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,16 +163,16 @@
     <Compile Include="ListaSimple.Designer.cs">
       <DependentUpon>ListaSimple.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pila.cs">
+    <Compile Include="frmPila.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pila.Designer.cs">
-      <DependentUpon>Pila.cs</DependentUpon>
+    <Compile Include="frmPila.Designer.cs">
+      <DependentUpon>frmPila.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Arbol.resx">
-      <DependentUpon>Arbol.cs</DependentUpon>
+    <EmbeddedResource Include="frmArbol.resx">
+      <DependentUpon>frmArbol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAlumnos.resx">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
@@ -148,11 +180,20 @@
     <EmbeddedResource Include="frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cola.resx">
-      <DependentUpon>Cola.cs</DependentUpon>
+    <EmbeddedResource Include="frmCola.resx">
+      <DependentUpon>frmCola.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCiudades.resx">
       <DependentUpon>frmCiudades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultasConOperaciones.resx">
+      <DependentUpon>frmConsultasConOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaSQL.resx">
+      <DependentUpon>frmConsultaSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaTabla.resx">
+      <DependentUpon>frmConsultaTabla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDias.resx">
       <DependentUpon>frmDias.cs</DependentUpon>
@@ -169,8 +210,14 @@
     <EmbeddedResource Include="frmMeses.resx">
       <DependentUpon>frmMeses.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmOperaciones.resx">
+      <DependentUpon>frmOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmProvincias.resx">
       <DependentUpon>frmProvincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrafo.resx">
+      <DependentUpon>frmGrafo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListaDoble.resx">
       <DependentUpon>ListaDoble.cs</DependentUpon>
@@ -178,8 +225,8 @@
     <EmbeddedResource Include="ListaSimple.resx">
       <DependentUpon>ListaSimple.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pila.resx">
-      <DependentUpon>Pila.cs</DependentUpon>
+    <EmbeddedResource Include="frmPila.resx">
+      <DependentUpon>frmPila.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -217,6 +264,7 @@
     <Content Include="BaseDatos\Libreria.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\descarga.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

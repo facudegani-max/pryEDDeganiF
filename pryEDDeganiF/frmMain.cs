@@ -89,7 +89,7 @@ namespace pryEDDeganiF
 
         private void colaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Cola x = new Cola();
+            frmCola x = new frmCola();
             x.ShowDialog();
         }
 
@@ -100,7 +100,7 @@ namespace pryEDDeganiF
 
         private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Pila x = new Pila();
+            frmPila x = new frmPila();
             x.ShowDialog();
         }
 
@@ -113,6 +113,42 @@ namespace pryEDDeganiF
         private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ListaDoble x = new ListaDoble();
+            x.ShowDialog();
+        }
+
+        private void arbolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArbol x = new frmArbol();
+            x.ShowDialog();
+        }
+
+        private void grafoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmGrafo x = new frmGrafo();
+            x.ShowDialog();
+        }
+
+        private void consultaDeTablaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaTabla x = new frmConsultaTabla();
+            x.ShowDialog();
+        }
+
+        private void consultaDeBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaSQL x = new frmConsultaSQL();
+            x.ShowDialog();
+        }
+
+        private void operacionesBaseDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmOperaciones x = new frmOperaciones();
+            x.ShowDialog();
+        }
+
+        private void consultasVariasConOperacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultasConOperaciones x = new frmConsultasConOperaciones();
             x.ShowDialog();
         }
     }

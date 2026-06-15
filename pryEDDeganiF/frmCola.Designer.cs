@@ -1,6 +1,6 @@
 ﻿namespace pryEDDeganiF
 {
-    partial class Cola
+    partial class frmCola
     {
         /// <summary>
         /// Required designer variable.
