@@ -93,6 +93,32 @@ namespace pryEDDeganiF
             return dt;
         }
 
+        // Convierte el grafo a un DataTable con columnas: Origen, Destino y Precio.
+        public DataTable ToDataTableViajes()
+        {
+            var dt = new DataTable();
+            dt.Columns.Add("Origen", typeof(string));
+            dt.Columns.Add("Destino", typeof(string));
+            dt.Columns.Add("Precio", typeof(string));
+
+            foreach (var origen in _nodos)
+            {
+                if (_adyacencia.ContainsKey(origen))
+                {
+                    foreach (var kv in _adyacencia[origen])
+                    {
+                        var row = dt.NewRow();
+                        row[0] = origen;
+                        row[1] = kv.Key;
+                        row[2] = kv.Value.ToString("0.##");
+                        dt.Rows.Add(row);
+                    }
+                }
+            }
+
+            return dt;
+        }
+
         public void Limpiar()
         {
             _nodos.Clear();

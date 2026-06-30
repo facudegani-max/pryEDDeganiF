@@ -127,13 +127,15 @@ namespace pryEDDeganiF
             var origen = cmbboxListar_Viajes_Desde.SelectedItem.ToString();
             var lista = grafo.ListarDestinosDesde(origen);
             var dt = new DataTable();
+            dt.Columns.Add("Origen");
             dt.Columns.Add("Destino");
             dt.Columns.Add("Precio");
             foreach (var kv in lista)
             {
                 var r = dt.NewRow();
-                r[0] = kv.Key;
-                r[1] = kv.Value.ToString("0.##");
+                r[0] = origen;
+                r[1] = kv.Key;
+                r[2] = kv.Value.ToString("0.##");
                 dt.Rows.Add(r);
             }
             dgvCola.DataSource = dt;
@@ -151,12 +153,14 @@ namespace pryEDDeganiF
             var lista = grafo.ListarOrigenesHacia(destino);
             var dt = new DataTable();
             dt.Columns.Add("Origen");
+            dt.Columns.Add("Destino");
             dt.Columns.Add("Precio");
             foreach (var kv in lista)
             {
                 var r = dt.NewRow();
                 r[0] = kv.Key;
-                r[1] = kv.Value.ToString("0.##");
+                r[1] = destino;
+                r[2] = kv.Value.ToString("0.##");
                 dt.Rows.Add(r);
             }
             dgvCola.DataSource = dt;
@@ -169,7 +173,7 @@ namespace pryEDDeganiF
 
         private void MostrarMatriz()
         {
-            var dt = grafo.ToDataTable();
+            var dt = grafo.ToDataTableViajes();
             dgvCola.DataSource = dt;
         }
     }
